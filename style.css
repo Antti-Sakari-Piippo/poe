@@ -6,7 +6,6 @@
   font-family: "IM Fell Double Pica", serif;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 
@@ -106,7 +105,6 @@ p.count {
 
 .left_bnt {
   left: var(--margin-600);
-  width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
 }
@@ -140,7 +138,7 @@ p.count {
 
 .raven--bg:before {
   content: "";
-  background-image: url(images/ravenNobg.png);
+  background-image: url(images/ravenNobg.webp);
   position: absolute;
   top: 21.6875rem;
   right: 0;
