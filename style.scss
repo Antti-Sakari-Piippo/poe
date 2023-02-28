@@ -24,6 +24,9 @@ $bg-color-body: #11121a;
     font-family: 'IM Fell Double Pica', serif;
     user-select: none;
 }
+button {
+    cursor: pointer;
+}
 
 button,
 button:focus {
@@ -78,6 +81,11 @@ h1 {
     height: 13.6875rem;
     white-space: nowrap;
 }
+span.text {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+}
 
 h2 {
     font-size: 3.125rem;
@@ -102,7 +110,7 @@ p.count {
     width: $project-width;
 }
 
-.left_bnt {
+.previous-btn {
     left: $margin-600;
     width: max-content;
 }

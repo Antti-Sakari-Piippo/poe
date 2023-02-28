@@ -9,14 +9,16 @@ let previousPagebutton = document.createElement('button')
 
 nextPagebutton.classList.add('button')
 previousPagebutton.classList.add('button')
-previousPagebutton.classList.add('left_bnt')
+previousPagebutton.classList.add('previous-btn')
+
+nextPagebutton.ariaLabel = 'next page'
+previousPagebutton.ariaLabel = 'previous page'
 
 container.appendChild(nextPagebutton)
 
 window.onload = function () {
   nextPagebutton.innerHTML = 'next page'
   textContent.innerHTML = theRavenPoe[0]
-  console.log(theRavenPoe[0])
 }
 
 let count = 1
