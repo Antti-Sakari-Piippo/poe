@@ -9,52 +9,35 @@
           user-select: none;
 }
 
-:root {
-  --margin-100: 0.5rem;
-  --margin-200: 1rem;
-  --padding-project: 1.2rem 1.7rem 2rem 1.7rem;
-  --margin-300: 1.5rem;
-  --margin-400: 2rem;
-  --margin-500: 2.5rem;
-  --margin-600: 3rem;
-  --project-width: 64rem;
-  --project-height: 85.375rem;
-  --btn-color: hsl(232, 24%, 26%);
-  --btn-active-color: hsl(231, 24%, 20%);
-  --ff-color: white;
-  --bg-color-1: hsl(232, 22%, 10%);
-  --bg-color-body: #11121a;
-}
-
 button,
 button:focus {
   border: none;
   font-size: 1.9rem;
   padding: 0.5rem 1.4rem 0.4em 1.4rem;
-  background-color: var(--btn-color);
+  background-color: hsl(232, 24%, 26%);
   border-radius: 1rem;
   color: white;
   position: absolute;
-  right: var(--margin-600);
-  bottom: var(--margin-600);
+  right: 3rem;
+  bottom: 3rem;
   z-index: 10000;
 }
 
 button:active {
   outline: none;
   z-index: 1000;
-  background-color: var(--btn-active-color);
+  background-color: hsl(231, 24%, 20%);
 }
 
 body {
   display: flex;
   margin: auto;
-  width: var(--project-width);
-  height: var(--project-height);
+  width: 64rem;
+  height: 85.375rem;
   justify-content: center;
   align-items: center;
   scale: 0.7;
-  background-color: var(--bg-color-body);
+  background-color: #11121a;
 }
 
 a {
@@ -65,18 +48,19 @@ h1,
 h2,
 span,
 p {
-  color: var(--ff-color);
+  color: white;
   opacity: 77%;
 }
 
 h1 {
   font-size: 13.4375rem;
   text-align: center;
-  border-bottom: 0.25rem solid var(--ff-color);
+  border-bottom: 0.25rem solid white;
   font-weight: 100;
   width: 92%;
-  margin: var(--margin-600) auto var(--margin-100) auto;
+  margin: 3rem auto 0.5rem auto;
   height: 13.6875rem;
+  white-space: nowrap;
 }
 
 h2 {
@@ -91,31 +75,27 @@ span {
 p {
   font-size: 2rem;
   text-align: center;
-  margin: var(--margin-600);
+  margin: 3rem;
 }
 
 p.count {
-  margin: var(--margin-100);
+  margin: 0.5rem;
 }
 
 .container {
-  height: var(--project-height);
-  width: var(--project-width);
+  height: 85.375rem;
+  width: 64rem;
 }
 
 .left_bnt {
-  left: var(--margin-600);
+  left: 3rem;
   width: -moz-max-content;
   width: max-content;
 }
 
 .project {
-  display: grid;
-  place-items: center;
-  margin: auto;
-  background-color: var(--bg-color-1);
-  width: var(--project-width);
-  height: var(--project-height);
+  background-color: hsl(232, 22%, 10%);
+  height: 85.375rem;
   position: relative;
   border-radius: 2%;
   overflow: hidden;
@@ -123,22 +103,21 @@ p.count {
 
 .edgar--bg:before {
   content: "";
-  background-image: url(images/EdgarAllanPoeLarge.webp);
+  background-image: url(images/EdgarAllanPoe.webp);
   position: absolute;
-  top: 15.375rem;
-  right: 3.75rem;
+  top: 29.375rem;
+  right: 0.75rem;
   bottom: 0;
-  left: -3.1875rem;
+  left: 5.8125rem;
   background-size: cover;
   background-repeat: no-repeat;
-  opacity: 0.02;
-  border-radius: 2%;
+  opacity: 0.03;
   scale: 5.1;
 }
 
 .raven--bg:before {
   content: "";
-  background-image: url(images/ravenNobg.webp);
+  background-image: url(images/raven.webp);
   position: absolute;
   top: 21.6875rem;
   right: 0;
@@ -163,8 +142,8 @@ header .author {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: var(--margin-200);
-  margin-bottom: var(--margin-400);
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 header .author span {
   margin-right: 0.6rem;
