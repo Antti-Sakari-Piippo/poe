@@ -11,13 +11,13 @@ nextPagebutton.classList.add('button')
 previousPagebutton.classList.add('button')
 previousPagebutton.classList.add('previous-btn')
 
-nextPagebutton.ariaLabel = 'next page'
-previousPagebutton.ariaLabel = 'previous page'
+nextPagebutton.ariaLabel = 'Next Page'
+previousPagebutton.ariaLabel = 'Previous Page'
 
 container.appendChild(nextPagebutton)
 
 window.onload = function () {
-  nextPagebutton.innerHTML = 'next page'
+  nextPagebutton.innerHTML = 'Next Page'
   textContent.innerHTML = theRavenPoe[0]
 }
 
@@ -36,7 +36,7 @@ const changePage = (x) => {
 
   if (count > 1) {
     container.appendChild(previousPagebutton)
-    previousPagebutton.innerHTML = 'previous page'
+    previousPagebutton.innerHTML = 'Previous Page'
   } else {
     previousPagebutton.remove()
   }
@@ -44,7 +44,10 @@ const changePage = (x) => {
     nextPagebutton.remove()
   } else {
     container.appendChild(nextPagebutton)
-    nextPagebutton.innerHTML = 'next page'
+    nextPagebutton.innerHTML = 'Next Page'
+    if (count === 5) {
+      nextPagebutton.innerHTML = 'Last Page'
+    }
   }
 }
 
