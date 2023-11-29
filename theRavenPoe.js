@@ -1,4 +1,4 @@
-let page_texts2 = [
+let page_texts = [
   `<p>
                 Once upon a midnight dreary, while I pondered, weak and weary,
                 Over many a quaint and curious volume of forgotten lore— While I
@@ -146,4 +146,4 @@ let page_texts2 = [
           </p>`,
 ]
 
-export default page_texts2
+export default page_texts
