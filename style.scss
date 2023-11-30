@@ -9,10 +9,12 @@ $margin-600: 3rem;
 $project-width: 64rem;
 $project-height: 85.375rem;
 
+$project-border-radius: 2%;
+
 // colors
-$btn-color: hsl(232, 24%, 26%);
+$btn-color: hsl(227, 20%, 21%);
 $btn-active-color: hsl(231, 24%, 20%);
-$ff-color: white;
+$ff-color: hsl(0, 0%, 76%);
 $bg-color-1: hsl(232, 22%, 10%);
 $bg-color-body: #11121a;
 
@@ -35,7 +37,7 @@ button:focus {
     padding: 1rem 1.7rem 1rem 1.7rem;
     background-color: $btn-color;
     border-radius: 1rem;
-    color: white;
+    color: $ff-color;
     position: absolute;
     right: $margin-600;
     bottom: $margin-600;
@@ -56,7 +58,9 @@ body {
     justify-content: center;
     align-items: center;
     scale: 0.7;
-    background-color: $bg-color-body;
+    // background-color: $bg-color-body;
+    background: rgb(17, 18, 26);
+    background: linear-gradient(90deg, rgba(17, 18, 26, 1) 0%, rgba(10, 10, 15, 1) 50%, rgba(17, 18, 26, 1) 100%);
 }
 
 a {
@@ -68,7 +72,6 @@ h2,
 span,
 p {
     color: $ff-color;
-    opacity: 77%;
 }
 
 h1 {
@@ -126,36 +129,24 @@ p.count {
     background-color: $bg-color-1;
     height: $project-height;
     position: relative;
-    border-radius: 2%;
+    border-radius: $project-border-radius;
     overflow: hidden;
 }
 
-.edgar--bg:before {
-    content: '';
-    background-image: url(images/EdgarAllanPoe.webp);
-    position: absolute;
-    top: 29.375rem;
-    right: 0.75rem;
-    bottom: 0;
-    left: 5.8125rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.03;
-    scale: 5.1;
-}
 .raven--bg:before {
     content: '';
-    background-image: url(images/raven.webp); //Photo by <a href="https://unsplash.com/@mappingmegantravel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Meg Jerrard</a> on <a href="https://unsplash.com/photos/9J3YRpgGq3Q?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    background-image: url(images/raven_gen.webp);
     position: absolute;
-    top: 21.6875rem;
-    right: 0;
+    // inset: 0;
+    top: -20px;
+    left: -99px;
+    right: 110px;
     bottom: 0;
-    left: 0;
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.13;
-    border-radius: 2%;
-    scale: 1.1;
+    opacity: 0.23;
+    border-radius: $project-border-radius;
+    scale: 1.25;
 }
 header {
     position: relative;

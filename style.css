@@ -18,9 +18,9 @@ button:focus {
   border: none;
   font-size: 1.5rem;
   padding: 1rem 1.7rem 1rem 1.7rem;
-  background-color: hsl(232, 24%, 26%);
+  background-color: hsl(227, 20%, 21%);
   border-radius: 1rem;
-  color: white;
+  color: hsl(0, 0%, 76%);
   position: absolute;
   right: 3rem;
   bottom: 3rem;
@@ -41,7 +41,8 @@ body {
   justify-content: center;
   align-items: center;
   scale: 0.7;
-  background-color: #11121a;
+  background: rgb(17, 18, 26);
+  background: linear-gradient(90deg, rgb(17, 18, 26) 0%, rgb(10, 10, 15) 50%, rgb(17, 18, 26) 100%);
 }
 
 a {
@@ -52,14 +53,13 @@ h1,
 h2,
 span,
 p {
-  color: white;
-  opacity: 77%;
+  color: hsl(0, 0%, 76%);
 }
 
 h1 {
   font-size: 13.4375rem;
   text-align: center;
-  border-bottom: 0.25rem solid white;
+  border-bottom: 0.25rem solid hsl(0, 0%, 76%);
   font-weight: 100;
   width: 92%;
   margin: 3rem auto 0.5rem auto;
@@ -118,33 +118,19 @@ p.count {
   overflow: hidden;
 }
 
-.edgar--bg:before {
-  content: "";
-  background-image: url(images/EdgarAllanPoe.webp);
-  position: absolute;
-  top: 29.375rem;
-  right: 0.75rem;
-  bottom: 0;
-  left: 5.8125rem;
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: 0.03;
-  scale: 5.1;
-}
-
 .raven--bg:before {
   content: "";
-  background-image: url(images/raven.webp);
+  background-image: url(images/raven_gen.webp);
   position: absolute;
-  top: 21.6875rem;
-  right: 0;
+  top: -20px;
+  left: -99px;
+  right: 110px;
   bottom: 0;
-  left: 0;
   background-size: cover;
   background-repeat: no-repeat;
-  opacity: 0.13;
+  opacity: 0.23;
   border-radius: 2%;
-  scale: 1.1;
+  scale: 1.25;
 }
 
 header {
