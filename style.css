@@ -4,9 +4,6 @@
   box-sizing: border-box;
   list-style: none;
   font-family: "IM Fell Double Pica", serif;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
 }
 
 ::-webkit-scrollbar {
