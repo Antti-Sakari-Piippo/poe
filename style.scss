@@ -26,6 +26,11 @@ $bg-color-body: #11121a;
     font-family: 'IM Fell Double Pica', serif;
     user-select: none;
 }
+
+::-webkit-scrollbar {
+    display: none;
+}
+
 button {
     cursor: pointer;
 }
@@ -53,14 +58,12 @@ button:active {
 body {
     display: flex;
     margin: auto;
-    width: $project-width;
-    height: $project-height;
+
     justify-content: center;
     align-items: center;
     scale: 0.7;
-    // background-color: $bg-color-body;
-    background: rgb(17, 18, 26);
     background: linear-gradient(90deg, rgba(17, 18, 26, 1) 0%, rgba(10, 10, 15, 1) 50%, rgba(17, 18, 26, 1) 100%);
+    position: relative;
 }
 
 a {
@@ -126,8 +129,9 @@ p.count {
 }
 
 .project {
-    background-color: $bg-color-1;
+    width: $project-width;
     height: $project-height;
+    background-color: $bg-color-1;
     position: relative;
     border-radius: $project-border-radius;
     overflow: hidden;
@@ -137,7 +141,6 @@ p.count {
     content: '';
     background-image: url(images/raven_gen.webp);
     position: absolute;
-    // inset: 0;
     top: -20px;
     left: -99px;
     right: 110px;

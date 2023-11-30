@@ -9,6 +9,10 @@
           user-select: none;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 button {
   cursor: pointer;
 }
@@ -36,13 +40,11 @@ button:active {
 body {
   display: flex;
   margin: auto;
-  width: 64rem;
-  height: 85.375rem;
   justify-content: center;
   align-items: center;
   scale: 0.7;
-  background: rgb(17, 18, 26);
   background: linear-gradient(90deg, rgb(17, 18, 26) 0%, rgb(10, 10, 15) 50%, rgb(17, 18, 26) 100%);
+  position: relative;
 }
 
 a {
@@ -111,8 +113,9 @@ p.count {
 }
 
 .project {
-  background-color: hsl(232, 22%, 10%);
+  width: 64rem;
   height: 85.375rem;
+  background-color: hsl(232, 22%, 10%);
   position: relative;
   border-radius: 2%;
   overflow: hidden;
