@@ -3,6 +3,7 @@ $margin-100: 0.5rem;
 $margin-200: 1rem;
 $margin-400: 2rem;
 $margin-500: 2.5rem;
+$margin-550: 2.75rem;
 $margin-600: 3rem;
 
 // project dimensions
@@ -77,7 +78,7 @@ p {
 }
 
 h1 {
-    font-size: 13.4375rem;
+    font-size: 13rem;
     text-align: center;
     border-bottom: 0.25rem solid $ff-color;
     font-weight: 100;
@@ -100,11 +101,11 @@ h2 {
 p {
     font-size: 2rem;
     text-align: center;
-    margin: $margin-600;
+    margin: $margin-550 $margin-600;
 }
 
-p.count {
-    margin: $margin-100;
+p.page-count {
+    margin-block: -3px;
 }
 .container {
     height: $project-height;
@@ -127,13 +128,14 @@ p.count {
     width: max-content;
 }
 
-.project {
+.screen {
     width: $project-width;
     height: $project-height;
     background-color: $bg-color-1;
     position: relative;
     border-radius: $project-border-radius;
     overflow: hidden;
+    scale: 0.9;
 }
 
 .raven--bg:before {
@@ -164,9 +166,8 @@ header {
         margin-top: $margin-200;
         margin-bottom: $margin-400;
         span {
-            margin-right: 0.6rem;
-            margin-top: 0.7rem;
-            font-size: 1.5em;
+            margin-right: 0.4rem;
+            font-size: 1.4em;
         }
     }
 }

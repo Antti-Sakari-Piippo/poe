@@ -2,7 +2,7 @@ import theRavenPoe from './theRavenPoe.js'
 
 let container = document.getElementById('container')
 let textContent = document.getElementById('text-content')
-let pageNumber = document.getElementById('count')
+let pageNumber = document.getElementById('page-count')
 
 let nextPagebutton = document.createElement('button')
 let previousPagebutton = document.createElement('button')

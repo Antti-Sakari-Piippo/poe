@@ -56,7 +56,7 @@ p {
 }
 
 h1 {
-  font-size: 13.4375rem;
+  font-size: 13rem;
   text-align: center;
   border-bottom: 0.25rem solid hsl(0, 0%, 76%);
   font-weight: 100;
@@ -80,11 +80,11 @@ h2 {
 p {
   font-size: 2rem;
   text-align: center;
-  margin: 3rem;
+  margin: 2.75rem 3rem;
 }
 
-p.count {
-  margin: 0.5rem;
+p.page-count {
+  margin-block: -3px;
 }
 
 .container {
@@ -109,13 +109,14 @@ p.count {
   width: max-content;
 }
 
-.project {
+.screen {
   width: 64rem;
   height: 85.375rem;
   background-color: hsl(232, 22%, 10%);
   position: relative;
   border-radius: 2%;
   overflow: hidden;
+  scale: 0.9;
 }
 
 .raven--bg:before {
@@ -149,9 +150,8 @@ header .author {
   margin-bottom: 2rem;
 }
 header .author span {
-  margin-right: 0.6rem;
-  margin-top: 0.7rem;
-  font-size: 1.5em;
+  margin-right: 0.4rem;
+  font-size: 1.4em;
 }
 
 p {
