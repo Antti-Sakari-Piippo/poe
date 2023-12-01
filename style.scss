@@ -1,7 +1,7 @@
 // margin utilities
 $margin-100: 0.5rem;
 $margin-200: 1rem;
-$margin-400: 2rem;
+$margin-400: 2.2rem;
 $margin-500: 2.5rem;
 $margin-550: 2.75rem;
 $margin-600: 3rem;
@@ -105,7 +105,7 @@ p {
 }
 
 p.page-count {
-    margin-block: -3px;
+    margin-block: -4px;
 }
 .container {
     height: $project-height;

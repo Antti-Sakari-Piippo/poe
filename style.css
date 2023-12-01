@@ -84,7 +84,7 @@ p {
 }
 
 p.page-count {
-  margin-block: -3px;
+  margin-block: -4px;
 }
 
 .container {
@@ -147,7 +147,7 @@ header .author {
   align-items: center;
   justify-content: center;
   margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.2rem;
 }
 header .author span {
   margin-right: 0.4rem;
