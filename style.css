@@ -79,6 +79,7 @@ h2 {
 
 p {
   line-height: 1.35;
+  text-wrap: pretty;
   font-size: 1.9375rem;
   text-align: center;
   margin: 2.75rem 3rem;
