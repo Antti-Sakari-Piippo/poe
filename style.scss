@@ -5,6 +5,7 @@ $margin-400: 2.2rem;
 $margin-500: 2.5rem;
 $margin-550: 2.75rem;
 $margin-600: 3rem;
+$margin-700: 3.8rem;
 
 // project dimensions
 $project-width: 64rem;
@@ -102,11 +103,12 @@ p {
     line-height: 1.4;
     text-wrap: pretty;
     font-size: 1.875rem;
-    text-align: center;
-    margin: $margin-550 $margin-600;
+    text-align: left;
+    margin: $margin-550 $margin-700;
 }
 
 p.page-count {
+    text-align: center;
     margin-block: -4px;
 }
 .container {

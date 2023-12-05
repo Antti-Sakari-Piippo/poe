@@ -81,11 +81,12 @@ p {
   line-height: 1.4;
   text-wrap: pretty;
   font-size: 1.875rem;
-  text-align: center;
-  margin: 2.75rem 3rem;
+  text-align: left;
+  margin: 2.75rem 3.8rem;
 }
 
 p.page-count {
+  text-align: center;
   margin-block: -4px;
 }
 
