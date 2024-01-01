@@ -21,7 +21,7 @@ button:focus {
   padding: 1rem 1.7rem 1rem 1.7rem;
   background-color: hsl(227, 20%, 21%);
   border-radius: 1rem;
-  color: hsl(0, 0%, 76%);
+  color: rgb(235, 235, 235);
   position: absolute;
   right: 3rem;
   bottom: 3rem;
@@ -52,13 +52,13 @@ h1,
 h2,
 span,
 p {
-  color: hsl(0, 0%, 76%);
+  color: rgb(235, 235, 235);
 }
 
 h1 {
   font-size: 13rem;
   text-align: center;
-  border-bottom: 0.25rem solid hsl(0, 0%, 76%);
+  border-bottom: 0.25rem solid rgb(235, 235, 235);
   font-weight: 100;
   width: 92%;
   margin: 3rem auto 0.5rem auto;
