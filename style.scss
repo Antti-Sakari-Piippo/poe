@@ -20,7 +20,9 @@ $ff-color: rgb(235, 235, 235);
 $bg-color-1: hsl(232, 22%, 10%);
 $bg-color-body: #11121a;
 
-* {
+*,
+*::before,
+*:active {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -57,12 +59,11 @@ button:active {
 }
 
 body {
-    display: flex;
     margin: auto;
-
+    display: flex;
     justify-content: center;
     align-items: center;
-    scale: 0.7;
+    scale: 0.65;
     background: linear-gradient(90deg, rgba(17, 18, 26, 1) 0%, rgba(10, 10, 15, 1) 50%, rgba(17, 18, 26, 1) 100%);
     position: relative;
 }
@@ -139,7 +140,6 @@ p.page-count {
     position: relative;
     border-radius: $project-border-radius;
     overflow: hidden;
-    scale: 0.9;
 }
 
 .raven--bg:before {

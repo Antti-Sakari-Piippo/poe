@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*:active {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -35,11 +37,11 @@ button:active {
 }
 
 body {
-  display: flex;
   margin: auto;
+  display: flex;
   justify-content: center;
   align-items: center;
-  scale: 0.7;
+  scale: 0.65;
   background: linear-gradient(90deg, rgb(17, 18, 26) 0%, rgb(10, 10, 15) 50%, rgb(17, 18, 26) 100%);
   position: relative;
 }
@@ -119,7 +121,6 @@ p.page-count {
   position: relative;
   border-radius: 2%;
   overflow: hidden;
-  scale: 0.9;
 }
 
 .raven--bg:before {
