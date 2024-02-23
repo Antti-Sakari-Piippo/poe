@@ -55,6 +55,7 @@ h2,
 span,
 p {
   color: rgb(235, 235, 235);
+  pointer-events: none;
 }
 
 h1 {
@@ -71,7 +72,6 @@ h1 {
 span.text {
   display: inline-block;
   opacity: 0;
-  filter: blur(4px);
 }
 
 h2 {
@@ -87,6 +87,19 @@ p {
   margin: 2.75rem 3.8rem;
 }
 
+#text-content p {
+  animation: fade-in 0.25s 0.25s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  opacity: 0;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 p.page-count {
   text-align: center;
   margin-block: -4px;
@@ -136,6 +149,7 @@ p.page-count {
   opacity: 0.23;
   border-radius: 2%;
   scale: 1.25;
+  pointer-events: none;
 }
 
 header {
@@ -156,15 +170,4 @@ header .author {
 header .author span {
   margin-right: 0.4rem;
   font-size: 1.4em;
-}
-
-p {
-  animation: fade-in 0.25s 0.25s forwards cubic-bezier(0.11, 0, 0.5, 0);
-  opacity: 0;
-}
-
-@keyframes fade-in {
-  100% {
-    opacity: 1;
-  }
 }/*# sourceMappingURL=style.css.map */

@@ -78,6 +78,7 @@ h2,
 span,
 p {
     color: $ff-color;
+    pointer-events: none;
 }
 
 h1 {
@@ -93,7 +94,6 @@ h1 {
 span.text {
     display: inline-block;
     opacity: 0;
-    filter: blur(4px);
 }
 
 h2 {
@@ -107,6 +107,20 @@ p {
     font-size: 1.875rem;
     text-align: left;
     margin: $margin-550 $margin-700;
+}
+
+#text-content p {
+    animation: fade-in 0.25s 0.25s forwards cubic-bezier(0.11, 0, 0.5, 0);
+    opacity: 0;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 p.page-count {
@@ -156,6 +170,7 @@ p.page-count {
     opacity: 0.23;
     border-radius: $project-border-radius;
     scale: 1.25;
+    pointer-events: none;
 }
 header {
     position: relative;
@@ -174,16 +189,5 @@ header {
             margin-right: 0.4rem;
             font-size: 1.4em;
         }
-    }
-}
-
-p {
-    animation: fade-in 0.25s 0.25s forwards cubic-bezier(0.11, 0, 0.5, 0);
-    opacity: 0;
-}
-
-@keyframes fade-in {
-    100% {
-        opacity: 1;
     }
 }
