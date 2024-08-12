@@ -23,7 +23,7 @@ $bg-color-body: #11121a;
 
 *,
 *::before,
-*:active {
+*:after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -148,7 +148,7 @@ p.page-count {
     width: max-content;
 }
 
-.screen {
+.raven {
     width: $project-width;
     height: $project-height;
     background-color: $bg-color-1;
@@ -183,8 +183,8 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: $margin-200;
-        margin-bottom: $margin-400;
+        margin-block-start: $margin-200;
+        margin-block-end: $margin-400;
         span {
             margin-right: 0.4rem;
             font-size: 1.4em;

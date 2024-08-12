@@ -1,6 +1,6 @@
 *,
 *::before,
-*:active {
+*:after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -127,7 +127,7 @@ p.page-count {
   width: max-content;
 }
 
-.screen {
+.raven {
   width: 64rem;
   height: 85.375rem;
   background-color: hsl(232, 22%, 10%);
@@ -164,8 +164,8 @@ header .author {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 1rem;
-  margin-bottom: 2.2rem;
+  margin-block-start: 1rem;
+  margin-block-end: 2.2rem;
 }
 header .author span {
   margin-right: 0.4rem;
