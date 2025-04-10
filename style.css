@@ -23,7 +23,7 @@ button:focus {
   padding: 1rem 1.7rem 1rem 1.7rem;
   background-color: hsl(227, 20%, 21%);
   border-radius: 1rem;
-  color: rgb(235, 235, 235);
+  color: white;
   position: absolute;
   right: 3rem;
   bottom: 3rem;
@@ -54,14 +54,14 @@ h1,
 h2,
 span,
 p {
-  color: rgb(235, 235, 235);
+  color: white;
   pointer-events: none;
 }
 
 h1 {
   font-size: 13rem;
   text-align: center;
-  border-bottom: 0.25rem solid rgb(235, 235, 235);
+  border-bottom: 0.25rem solid white;
   font-weight: 100;
   width: 92%;
   margin: 3rem auto 0.5rem auto;
