@@ -87,9 +87,9 @@ h1 {
     text-align: center;
     border-bottom: 0.25rem solid $ff-color;
     font-weight: 100;
-    width: 92%;
+    inline-size: 92%;
     margin: $margin-600 auto $margin-100 auto;
-    height: 13.6875rem;
+    block-size: 13.6875rem;
     white-space: nowrap;
 }
 span.text {
@@ -129,14 +129,14 @@ p.page-count {
     margin-block: -4px;
 }
 .container {
-    height: $project-height;
-    width: $project-width;
+    block-size: $project-height;
+    inline-size: $project-width;
 }
 
 .visually-hidden {
     position: absolute;
-    width: 1px;
-    height: 1px;
+    inline-size: 1px;
+    block-size: 1px;
     padding: 0;
     margin: -1px;
     overflow: hidden;
@@ -146,12 +146,12 @@ p.page-count {
 
 .previous-btn {
     left: $margin-600;
-    width: max-content;
+    inline-size: max-content;
 }
 
 .raven {
-    width: $project-width;
-    height: $project-height;
+    inline-size: $project-width;
+    block-size: $project-height;
     background-color: $bg-color-1;
     position: relative;
     border-radius: $project-border-radius;

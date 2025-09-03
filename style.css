@@ -63,9 +63,9 @@ h1 {
   text-align: center;
   border-bottom: 0.25rem solid white;
   font-weight: 100;
-  width: 92%;
+  inline-size: 92%;
   margin: 3rem auto 0.5rem auto;
-  height: 13.6875rem;
+  block-size: 13.6875rem;
   white-space: nowrap;
 }
 
@@ -106,14 +106,14 @@ p.page-count {
 }
 
 .container {
-  height: 85.375rem;
-  width: 64rem;
+  block-size: 85.375rem;
+  inline-size: 64rem;
 }
 
 .visually-hidden {
   position: absolute;
-  width: 1px;
-  height: 1px;
+  inline-size: 1px;
+  block-size: 1px;
   padding: 0;
   margin: -1px;
   overflow: hidden;
@@ -123,13 +123,13 @@ p.page-count {
 
 .previous-btn {
   left: 3rem;
-  width: -moz-max-content;
-  width: max-content;
+  inline-size: -moz-max-content;
+  inline-size: max-content;
 }
 
 .raven {
-  width: 64rem;
-  height: 85.375rem;
+  inline-size: 64rem;
+  block-size: 85.375rem;
   background-color: hsl(232, 22%, 10%);
   position: relative;
   border-radius: 2%;
