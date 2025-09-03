@@ -1,59 +1,60 @@
 import theRavenPoe from './theRavenPoe.js'
 
-let container = document.getElementById('container')
-let textContent = document.getElementById('text-content')
-let pageNumber = document.getElementById('page-count')
+const MAX_PAGE = theRavenPoe.length
+let currentPage = 1
 
-let nextPagebutton = document.createElement('button')
-let previousPagebutton = document.createElement('button')
+// DOM Elements
+const container = document.getElementById('container')
+const textContent = document.getElementById('text-content')
+const pageNumber = document.getElementById('page-count')
 
-nextPagebutton.classList.add('button')
-previousPagebutton.classList.add('button')
-previousPagebutton.classList.add('previous-btn')
+// Buttons
+const nextPageButton = document.createElement('button')
+const previousPageButton = document.createElement('button')
 
-nextPagebutton.ariaLabel = 'Next Page'
-previousPagebutton.ariaLabel = 'Previous Page'
+// Button Setup
+nextPageButton.classList.add('button')
+previousPageButton.classList.add('button', 'previous-btn')
 
-container.appendChild(nextPagebutton)
+nextPageButton.setAttribute('aria-label', 'Next Page')
+previousPageButton.setAttribute('aria-label', 'Previous Page')
 
-window.onload = function () {
-  nextPagebutton.innerHTML = 'Next Page'
-  textContent.innerHTML = theRavenPoe[0]
-}
+nextPageButton.textContent = 'Next Page'
+previousPageButton.textContent = 'Previous Page'
 
-let count = 1
+// Event Listeners
+nextPageButton.addEventListener('click', () => changePage(1))
+previousPageButton.addEventListener('click', () => changePage(-1))
 
-const changePage = (x) => {
-  count += x
-  if (count > 6) {
-    count = 6
-  }
-  if (count < 1) {
-    count = 1
-  }
-  pageNumber.innerHTML = `${count}/6`
-  textContent.innerHTML = theRavenPoe[count - 1]
+// Initial Page Render
+document.addEventListener('DOMContentLoaded', () => {
+  container.appendChild(previousPageButton)
+  container.appendChild(nextPageButton)
+  renderPage(currentPage)
+})
 
-  if (count > 1) {
-    container.appendChild(previousPagebutton)
-    previousPagebutton.innerHTML = 'Previous Page'
-  } else {
-    previousPagebutton.remove()
-  }
-  if (count === 6) {
-    nextPagebutton.remove()
-  } else {
-    container.appendChild(nextPagebutton)
-    nextPagebutton.innerHTML = 'Next Page'
-    if (count === 5) {
-      nextPagebutton.innerHTML = 'Last Page'
-    }
+// Change page logic
+function changePage(delta) {
+  const newPage = currentPage + delta
+  if (newPage >= 1 && newPage <= MAX_PAGE) {
+    currentPage = newPage
+    renderPage(currentPage)
   }
 }
 
-nextPagebutton.addEventListener('click', function () {
-  changePage(1)
-})
-previousPagebutton.addEventListener('click', function () {
-  changePage(-1)
-})
+// Render current page
+function renderPage(page) {
+  textContent.innerHTML = theRavenPoe[page - 1]
+  pageNumber.textContent = `${page}/${MAX_PAGE}`
+
+  // Handle previous button
+  previousPageButton.style.display = (page === 1) ? 'none' : 'inline-block'
+
+  // Handle next button
+  if (page === MAX_PAGE) {
+    nextPageButton.style.display = 'none'
+  } else {
+    nextPageButton.style.display = 'inline-block'
+    nextPageButton.textContent = (page === MAX_PAGE - 1) ? 'Last Page' : 'Next Page'
+  }
+}
