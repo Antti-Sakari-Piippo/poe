@@ -80,7 +80,7 @@ h2 {
 }
 
 p {
-  line-height: 1.4;
+  line-height: 1.44;
   text-wrap: pretty;
   font-size: 1.875rem;
   text-align: left;
@@ -106,7 +106,7 @@ p.page-count {
 }
 
 .container {
-  block-size: 85.375rem;
+  block-size: 86.4rem;
   inline-size: 64rem;
 }
 
@@ -130,7 +130,7 @@ p.page-count {
 .raven {
   inline-size: 64rem;
   min-inline-size: 64rem;
-  block-size: 85.375rem;
+  block-size: 86.4rem;
   background-color: hsl(232, 22%, 10%);
   position: relative;
   border-radius: 2%;
