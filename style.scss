@@ -128,6 +128,7 @@ p.page-count {
     text-align: center;
     margin-block: -4px;
 }
+
 .container {
     block-size: $project-height;
     inline-size: $project-width;
@@ -151,6 +152,7 @@ p.page-count {
 
 .raven {
     inline-size: $project-width;
+    min-inline-size: $project-width;
     block-size: $project-height;
     background-color: $bg-color-1;
     position: relative;

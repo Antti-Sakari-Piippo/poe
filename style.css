@@ -129,6 +129,7 @@ p.page-count {
 
 .raven {
   inline-size: 64rem;
+  min-inline-size: 64rem;
   block-size: 85.375rem;
   background-color: hsl(232, 22%, 10%);
   position: relative;
